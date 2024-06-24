@@ -2,7 +2,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home2 from './pages/Home2'
-
+import DriverMaster from './pages/DriverMaster';
 function App() {
  
 
@@ -14,7 +14,7 @@ function App() {
         <Route index element={<Login/>}/>
         <Route path='/Home' element={<Home/>} />
         <Route path='/Home2' element={<Home2/>}/>
-
+        <Route path='/Home2/DriverMaster' element={<DriverMaster/>}/>
       </Routes>
       </BrowserRouter>
     </>
