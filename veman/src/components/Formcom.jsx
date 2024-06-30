@@ -3,9 +3,7 @@ const Formcom = ({ onCancel }) => {
   
   return (
     <div className={styles.formContainer}>
-    <form
-      action="/Home"
-    >
+    <form action="/Home">
       <div className={styles.formGroup}>
         <label>initiator_id</label>
         <input
