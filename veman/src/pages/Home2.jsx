@@ -1,4 +1,4 @@
-import Tableshow from "../components/Tableshow";
+import TableShow from "../components/TableShow";
 import Topbar from "../components/Topbar";
 
 const Home2 = () => {
@@ -12,7 +12,7 @@ const Home2 = () => {
         <h1>welcome, Today date is {formattedDate}</h1>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-        <Tableshow admin={true} />
+        <TableShow admin={true} />
       </div>
     </>
   );

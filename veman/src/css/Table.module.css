@@ -1,0 +1,64 @@
+.table {
+    overflow-x: auto;
+    margin: 10px 20px; /* Adjust margin */
+    border-radius: 20px;
+    max-width: calc(100vw - 40px); /* Adjust max-width */
+  }
+  
+  .table th {
+    background-color: rgba(239, 239, 239, 0.511);
+    padding: 10px 15px;
+  }
+  
+  .table td {
+    padding: 10px 15px;
+    text-align: center; /* Change text-align-last to text-align */
+  }
+  
+  .button {
+    background-color: rgb(122, 14, 223);
+    color: white;
+    font-size: 14px; /* Adjust font size */
+    padding: 5px 10px; /* Adjust padding */
+  }
+  
+  .whole {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100vw - 20px); /* Adjust width */
+  }
+  
+  @media screen and (max-width: 320px) {
+    .table {
+      margin-top: 20px;
+    }
+    .table th {
+      background-color: rgba(239, 239, 239, 0.511);
+      padding: 5px 10px; /* Adjust padding */
+      font-size: 14px; /* Adjust font size */
+    }
+    .table td {
+      font-size: 12px; /* Adjust font size */
+    }
+    .button {
+      font-size: 12px; /* Adjust font size */
+      padding: 3px 8px; /* Adjust padding */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .table th {
+      padding: 5px 10px; /* Adjust padding */
+    }
+    .table td {
+      padding: 15px 10px; /* Adjust padding */
+    }
+    .button {
+      font-size: 12px; /* Adjust font size */
+    }
+  }
+  

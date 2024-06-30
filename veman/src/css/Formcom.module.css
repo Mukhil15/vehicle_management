@@ -1,0 +1,67 @@
+.formContainer {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formActions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.submitButton, .cancelButton {
+  flex: 1;
+  margin: 5px;
+  background-color: rgb(92, 21, 159);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.cancelButton {
+  background-color: grey;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  .formContainer {
+    width: 95%;
+    padding: 15px;
+    font-size: 13px;
+  }
+
+  .formGroup input {
+    padding: 8px;
+  }
+
+  .submitButton, .cancelButton {
+    padding: 5px 0px;
+    
+  }
+}
