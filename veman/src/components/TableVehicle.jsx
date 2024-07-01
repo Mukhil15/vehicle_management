@@ -1,9 +1,15 @@
 
-import data3 from './Data3'
+import axios from "axios";
 import styles from '../css/Bustable.module.css'
-
+import { useState,useEffect } from 'react';
 const TableVehicle = () => {
-
+    const [Vehicle,setVehicle]=useState([]);
+useEffect(()=>{
+axios
+.get("http://localhost:4000/admin/VehicleMaster/")
+.then((response)=>setVehicle(response.data))
+.catch((err)=>console.log(err))
+},[]);
     return (
     <>
     <div className={styles.whole}>
@@ -26,7 +32,7 @@ const TableVehicle = () => {
            
         </tr>
         
-    {data3.map((item,index)=>(
+    {Vehicle.map((item,index)=>(
         <tr key={index}>
         <td>{index+1}</td>
         <td >{item.vehicle_id}</td>

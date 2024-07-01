@@ -1,0 +1,59 @@
+.mainContainer {
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .mainContainer h1{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .displayContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa; /* light blue background */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .eachContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .title {
+    width: 150px; /* fixed width for titles */
+    padding-right: 15px;
+    font-weight: bold;
+  }
+  
+  .cancelButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #a408d4; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancelButton:hover {
+    background-color: #b30ae7d1; /* darker shade on hover */
+  }
+  
+  @media screen and (max-width:500px){
+.mainContainer{
+    width:95%;
+}
+.mainContainer h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.mainContainer h2,p{
+    font-size: 14px;
+}
+  }
