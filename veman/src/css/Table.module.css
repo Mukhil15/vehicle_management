@@ -1,64 +1,81 @@
 .table {
-    overflow-x: auto;
-    margin: 10px 20px; /* Adjust margin */
-    border-radius: 20px;
-    max-width: calc(100vw - 40px); /* Adjust max-width */
+  overflow-x: auto;
+  margin: 10px 20px; /* Adjust margin */
+  border-radius: 20px;
+  max-width: calc(100vw - 40px); /* Adjust max-width */
+}
+
+.table th {
+  background-color: rgba(239, 239, 239, 0.511);
+  padding: 10px 15px;
+}
+
+.table td {
+  padding: 10px 15px;
+  text-align: center; /* Change text-align-last to text-align */
+}
+
+.button {
+  background-color: rgb(122, 14, 223);
+  color: white;
+  font-size: 14px; /* Adjust font size */
+  padding: 5px 10px; /* Adjust padding */
+}
+
+.whole {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(100vw - 20px); /* Adjust width */
+}
+.searchbar{
+  margin:5px;
+}
+.searchbar select{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 5px;
+  max-width: 250px;
+  margin-top: 8px;
+}
+.searchbar input[type="text"] {
+  font-size: 14px;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+  width:250px;
   }
-  
+@media screen and (max-width: 320px) {
+  .table {
+    margin-top: 20px;
+  }
   .table th {
     background-color: rgba(239, 239, 239, 0.511);
-    padding: 10px 15px;
-  }
-  
-  .table td {
-    padding: 10px 15px;
-    text-align: center; /* Change text-align-last to text-align */
-  }
-  
-  .button {
-    background-color: rgb(122, 14, 223);
-    color: white;
-    font-size: 14px; /* Adjust font size */
     padding: 5px 10px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
   }
-  
-  .whole {
-    margin-top: 10px;
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: calc(100vw - 20px); /* Adjust width */
+  .table td {
+    font-size: 12px; /* Adjust font size */
   }
-  
-  @media screen and (max-width: 320px) {
-    .table {
-      margin-top: 20px;
-    }
-    .table th {
-      background-color: rgba(239, 239, 239, 0.511);
-      padding: 5px 10px; /* Adjust padding */
-      font-size: 14px; /* Adjust font size */
-    }
-    .table td {
-      font-size: 12px; /* Adjust font size */
-    }
-    .button {
-      font-size: 12px; /* Adjust font size */
-      padding: 3px 8px; /* Adjust padding */
-    }
+  .button {
+    font-size: 12px; /* Adjust font size */
+    padding: 3px 8px; /* Adjust padding */
   }
-  
-  @media screen and (max-width: 600px) {
-    .table th {
-      padding: 5px 10px; /* Adjust padding */
-    }
-    .table td {
-      padding: 15px 10px; /* Adjust padding */
-    }
-    .button {
-      font-size: 12px; /* Adjust font size */
-    }
+}
+
+@media screen and (max-width: 600px) {
+  .table td {
+    padding: 15px 10px; /* Adjust padding */
   }
-  
+  .button {
+    font-size: 12px; /* Adjust font size */
+  }
+  .tablehead th{
+   padding: 10px 10px;
+  }
+}

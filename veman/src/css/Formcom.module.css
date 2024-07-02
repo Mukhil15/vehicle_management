@@ -26,6 +26,18 @@
   border-radius: 5px;
 }
 
+.radioGroup {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.radioGroup label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
 .formActions {
   display: flex;
   justify-content: space-between;
@@ -61,7 +73,6 @@
   }
 
   .submitButton, .cancelButton {
-    padding: 5px 0px;
-    
+    padding: 5px 0;
   }
 }
