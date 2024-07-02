@@ -8,8 +8,8 @@ const Home2 = () => {
   return (
     <>
       <Topbar admin={true} />
-      <div className="Welcome.content">
-      </div>
+      <h1>Welcome Back...!</h1>
+        <p>Date: {formattedDate}</p>
       <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
         <Tableshow admin={true} />
       </div>
